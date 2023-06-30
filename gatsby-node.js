@@ -6,7 +6,7 @@ exports.createPages = ({ actions }) => {
   ymlDoc.forEach(element => {
     createPage({
       path: element.path,
-      component: require.resolve("src/templates/basicTemplate.js"),
+      component: require.resolve("./src/templates/basicTemplate.js"),
       context: {
         pageContent: element.content,
         links: element.links,
